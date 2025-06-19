@@ -1,0 +1,22 @@
+###
+# @name Game Start
+POST http://localhost:8080/start
+Content-Type: application/json
+
+{
+  "level": "EASY"
+}
+
+###
+# @name Game 정답 보기
+GET http://localhost:8080/cheat
+Content-Type: application/json
+
+###
+# @name Game 정답 맞추기
+POST http://localhost:8080/check
+Content-Type: application/json
+
+{
+  "question": [2,0,1,3]
+}
